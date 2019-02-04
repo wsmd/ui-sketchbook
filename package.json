@@ -1,0 +1,39 @@
+{
+  "name": "buttons",
+  "private": true,
+  "description": "Personal experiments with various UI components and interactions",
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 80
+  },
+  "scripts": {
+    "start": "start-storybook --port 3000",
+    "build": "build-storybook -c .storybook -o build",
+    "deploy": "./scripts/deploy"
+  },
+  "dependencies": {
+    "@babel/core": "7.0.0",
+    "@storybook/addon-notes": "^4.0.1",
+    "@storybook/addon-options": "^4.0.1",
+    "@storybook/addons": "^4.0.1",
+    "@storybook/react": "^4.0.1",
+    "babel-eslint": "10.0.1",
+    "babel-loader": "8.0.0",
+    "classnames": "^2.2.6",
+    "css-loader": "^1.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "lodash.difference": "^4.5.0",
+    "lodash.intersection": "^4.4.0",
+    "lodash.union": "^4.6.0",
+    "node-sass": "^4.11.0",
+    "react": "16.3",
+    "react-dom": "16.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.0"
+  }
+}
