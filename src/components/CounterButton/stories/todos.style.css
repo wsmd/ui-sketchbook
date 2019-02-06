@@ -1,0 +1,31 @@
+.Todo {
+  display: flex;
+  align-items: flex-start;
+  padding: 6px 8px;
+  max-width: 400px;
+  cursor: pointer;
+  transition: all 0.15s;
+  border-radius: 4px;
+  line-height: 1.5;
+  user-select: none;
+}
+
+.Todo:hover {
+  background: #eff2f7;
+  box-shadow: 0 1px 1px 0 rgba(188, 188, 188, 0.12),
+    0 1px 3px 0 rgba(0, 0, 0, 0.03);
+}
+
+.Todo input + span {
+  transition: all 0.15s;
+}
+
+.Todo input {
+  margin-right: 10px;
+  top: 4px;
+  position: relative;
+}
+
+.Todo input:checked + span {
+  opacity: 0.4;
+}

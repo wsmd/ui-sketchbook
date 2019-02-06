@@ -1,0 +1,101 @@
+.CounterButton {
+  color: white;
+  background: #0076ff;
+  box-shadow: 0 4px 8px -3px rgba(0, 118, 255, 0.5),
+    0 1px 1px rgba(0, 118, 255, 0.25);
+  padding: 8px 12px;
+  line-height: 16px;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  transition-property: width, background, opacity;
+  font-size: 14px;
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: left;
+  border: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.CounterButton-counter {
+  margin-left: 8px;
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.CounterButton-count {
+  backface-visibility: hidden;
+  transition: all 0.2s ease;
+  display: inline-block;
+  animation-duration: 250ms;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  transform: translate3d(0, 0, 0);
+}
+
+.CounterButton-count--prev,
+.CounterButton-count--next {
+  position: absolute;
+  left: 0;
+  opacity: 0;
+}
+
+.CounterButton-count--prev {
+  transform: translate3d(0, 25px, 0);
+}
+
+.CounterButton-count--next {
+  transform: translate3d(0, -25px, 0);
+}
+
+.CounterButton.is-incrementing .CounterButton-count--next {
+  animation-name: incrementingNext;
+}
+
+.CounterButton.is-incrementing .CounterButton-count--active {
+  animation-name: incrementingActive;
+}
+
+.CounterButton.is-decrementing .CounterButton-count--prev {
+  animation-name: decrementingPrev;
+}
+
+.CounterButton.is-decrementing .CounterButton-count--active {
+  animation-name: decrementingActive;
+}
+
+@keyframes incrementingNext {
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes incrementingActive {
+  60% {
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 25px, 0);
+    opacity: 0;
+  }
+}
+
+@keyframes decrementingPrev {
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+@keyframes decrementingActive {
+  60% {
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, -25px, 0);
+    opacity: 0;
+  }
+}
