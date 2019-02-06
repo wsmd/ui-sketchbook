@@ -1,0 +1,65 @@
+.Wrapper {
+  width: 650px;
+
+  &.is-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 126px);
+    grid-gap: 5px;
+  }
+}
+
+.Header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-bottom: 8px;
+  margin-top: 30px;
+}
+
+.Selection {
+  transition: opacity 250ms ease;
+  position: absolute;
+  z-index: 9999;
+  background: #0080ff0f;
+  border: solid 1px #2196f382;
+  pointer-events: none;
+}
+
+.ButtonGroup {
+  align-self: flex-end;
+  .Button:not(:last-child) {
+    margin-right: 4px;
+  }
+}
+
+.Button {
+  color: white;
+  background: #1782ff;
+  box-shadow: 0 4px 8px -3px rgba(0, 118, 255, 0.25),
+    0 1px 1px rgba(0, 118, 255, 0.2);
+  padding: 0 12px;
+  line-height: 32px;
+  display: inline-block;
+  border-radius: 4px;
+  transition: all 0.15s ease;
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
+  outline: 0;
+
+  &:disabled {
+    cursor: default;
+    opacity: 0.5;
+  }
+
+  &:active {
+    background: rgb(24, 122, 234);
+    box-shadow: 0 0 0 0 rgba(0, 118, 255, 0.25),
+      0 1px 1px rgba(0, 118, 255, 0.2);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+}
