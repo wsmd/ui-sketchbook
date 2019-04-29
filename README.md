@@ -10,7 +10,7 @@ All experiments can be previewed by clicking the link below:
 
 ## Components
 
-Source code for all components is available under [`src/components`](https://github.com/wsmd/ui-sketchbook/tree/master/src/components/).
+The Source code for all components is available under [`src/components`](https://github.com/wsmd/ui-sketchbook/tree/master/src/components/).
 
 | Name            |                               Preview                               | Code                                                                                   | Description                                                                                                             |
 | --------------- | :-----------------------------------------------------------------: | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
