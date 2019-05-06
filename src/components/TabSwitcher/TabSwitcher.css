@@ -1,0 +1,62 @@
+.TabSwitcher {
+  color: white;
+  font-weight: 400;
+  position: relative;
+  white-space: nowrap;
+}
+
+.TabSwitcher-items {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-bottom: 2px #2c2c2c solid;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.TabSwitcher-item {
+  display: inline-block;
+  position: relative;
+  animation: slideInUp ease 0.5s;
+}
+
+.TabSwitcher-item a {
+  backface-visibility: hidden;
+  position: relative;
+  transform: translateZ(0px);
+  -webkit-transform: translateZ(0px);
+  color: #9b9b9b;
+  text-decoration: none;
+  padding: 10px 0;
+  display: inline-block;
+  transition: all ease-in-out 0.15s;
+}
+
+.TabSwitcher-item.is-active a {
+  color: white;
+}
+
+.TabSwitcher-item a:hover {
+  color: white;
+}
+
+.TabSwitcher-item:not(:last-child) {
+  margin-right: 1.5em;
+}
+
+.TabSwitcher-indicator {
+  position: absolute;
+  height: 2px;
+  background: white;
+  bottom: 0;
+  transition: all cubic-bezier(0.175, 0.885, 0.32, 1.05) 0.3s;
+}

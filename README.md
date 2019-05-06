@@ -17,6 +17,7 @@ The Source code for all components is available under [`src/components`](https:/
 | `CounterButton` | [Preview](https://ui-sketchbook.now.sh/?selectedKind=CounterButton) | [Code](https://github.com/wsmd/ui-sketchbook/tree/master/src/components/CounterButton) | A custom button component with an animated counter.                                                                     |
 | `IconInput`     |   [Preview](https://ui-sketchbook.now.sh/?selectedKind=IconInput)   | [Code](https://github.com/wsmd/ui-sketchbook/tree/master/src/components/IconInput)     | A icon that transitions into a text input on focus with various interactive states such as loading, success, and error. |
 | `DragSelect`    |  [Preview](https://ui-sketchbook.now.sh/?selectedKind=DragSelect)   | [Code](https://github.com/wsmd/ui-sketchbook/tree/master/src/components/DragSelect)    | A drag & select interaction.                                                                                            |
+| `TabSwitcher`   |  [Preview](https://ui-sketchbook.now.sh/?selectedKind=TabSwitcher)  | [Code](https://github.com/wsmd/ui-sketchbook/tree/master/src/components/TabSwitcher)   | A tabs UI with an active tab indicator that re-positions and resizes itself based on the selected tab.                  |
 
 ## Notes
 
